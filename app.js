@@ -29,6 +29,6 @@ app.get('/', function(req, res, next){
         })
 })
 
-app.listen(5000, function(req,res){
+app.listen(process.env.PORT || 5000, function(req,res){
     console.log('app is listening at 5000')
 })
